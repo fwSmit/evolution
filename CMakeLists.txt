@@ -11,6 +11,9 @@ project (evolution_project CXX)
 file(GLOB_RECURSE sources src/*.cpp src/*.h)
 file(GLOB_RECURSE data resources/*)
 
+message("Found these sources: ")
+message("${sources}")
+
 add_executable(evolution ${sources} ${data})
 
 #copy resources to build directory
